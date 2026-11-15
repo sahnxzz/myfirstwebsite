@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Quote | WebCraft</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { font-family: Arial, sans-serif; color: #172033; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 7%;
+            box-shadow: 0 2px 12px #0001;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #1769ff;
+            text-decoration: none;
+        }
+
+        nav { display: flex; flex-wrap: wrap; gap: 20px; }
+
+        nav a {
+            color: #172033;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: #1769ff; }
+
+        main {
+            max-width: 850px;
+            margin: auto;
+            padding: 65px 7%;
+            min-height: 70vh;
+        }
+
+        .tag { color: #1769ff; font-weight: bold; }
+
+        h1 { font-size: 40px; margin: 15px 0; }
+
+        p { color: #667085; }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        input, select, textarea {
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font: inherit;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 13px;
+            border: none;
+            border-radius: 6px;
+            background: #1769ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0c192e;
+            color: white;
+        }
+
+        @media (max-width: 750px) {
+            header { flex-direction: column; }
+            nav { justify-content: center; gap: 12px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">WebCraft.</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="quote.html">Get a Free Quote</a>
+    </nav>
+</header>
+
+<main>
+    <p class="tag">START YOUR PROJECT</p>
+    <h1>Get a Free Quote</h1>
+    <p>Share your requirements with us.</p>
+
+    <form action="mailto:your-email@example.com"
+          method="post" enctype="text/plain">
+
+        <label for="name">Your Name</label>
+        <input id="name" name="Name" type="text" required>
+
+        <label for="email">Your Email</label>
+        <input id="email" name="Email" type="email" required>
+
+        <label for="service">Select Service</label>
+        <select id="service" name="Service" required>
+            <option value="">Choose a service</option>
+            <option>Front-End Development</option>
+            <option>Back-End Development</option>
+            <option>Full Stack Development</option>
+            <option>E-Commerce Website</option>
+            <option>UI/UX Design</option>
+        </select>
+
+        <label for="details">Project Details</label>
+        <textarea id="details" name="Details"
+                  rows="5" required></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</main>
+
+<footer>© 2026 WebCraft. All rights reserved.</footer>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | WebCraft</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #172033;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 7%;
+            box-shadow: 0 2px 12px #0001;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #1769ff;
+            text-decoration: none;
+        }
+
+        nav { display: flex; flex-wrap: wrap; gap: 20px; }
+
+        nav a {
+            color: #172033;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: #1769ff; }
+
+        main { padding: 65px 7%; min-height: 70vh; }
+
+        .tag { color: #1769ff; font-weight: bold; }
+
+        h1 { font-size: 40px; margin: 15px 0; }
+
+        .description { color: #667085; line-height: 1.8; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin: 35px 0;
+        }
+
+        .card {
+            padding: 25px;
+            border: 1px solid #e2e8f0;
+            background: #f7f9fc;
+            border-radius: 12px;
+        }
+
+        .card h2 { font-size: 21px; margin-bottom: 10px; }
+
+        .card p { color: #667085; line-height: 1.7; }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 22px;
+            background: #1769ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0c192e;
+            color: white;
+        }
+
+        @media (max-width: 750px) {
+            header { flex-direction: column; }
+            nav { justify-content: center; gap: 12px; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">WebCraft.</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="quote.html">Get a Free Quote</a>
+    </nav>
+</header>
+
+<main>
+    <p class="tag">WHAT WE OFFER</p>
+    <h1>Our Web Development Services</h1>
+    <p class="description">
+        We provide creative and reliable digital solutions for your needs.
+    </p>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Front-End Development</h2>
+            <p>Modern interfaces using HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="card">
+            <h2>Back-End Development</h2>
+            <p>Server-side applications and database integration.</p>
+        </div>
+
+        <div class="card">
+            <h2>Full Stack Development</h2>
+            <p>Complete web solutions from front end to back end.</p>
+        </div>
+
+        <div class="card">
+            <h2>E-Commerce Websites</h2>
+            <p>Online shopping websites for modern businesses.</p>
+        </div>
+
+        <div class="card">
+            <h2>UI/UX Design</h2>
+            <p>Clean interfaces and easy navigation for users.</p>
+        </div>
+
+        <div class="card">
+            <h2>Website Maintenance</h2>
+            <p>Website updates, bug fixes and technical support.</p>
+        </div>
+    </div>
+
+    <a href="quote.html" class="btn">Request a Quote →</a>
+</main>
+
+<footer>© 2026 WebCraft. All rights reserved.</footer>
+
+</body>
+</html>

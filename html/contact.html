@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | WebCraft</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { font-family: Arial, sans-serif; color: #172033; }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 7%;
+            box-shadow: 0 2px 12px #0001;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #1769ff;
+            text-decoration: none;
+        }
+
+        nav { display: flex; flex-wrap: wrap; gap: 20px; }
+
+        nav a {
+            text-decoration: none;
+            color: #172033;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: #1769ff; }
+
+        main {
+            max-width: 850px;
+            margin: auto;
+            padding: 75px 7%;
+            min-height: 70vh;
+        }
+
+        h1 { font-size: 40px; margin: 15px 0; }
+
+        p { color: #667085; line-height: 1.8; }
+
+        .tag { color: #1769ff; font-weight: bold; }
+
+        .contact-card {
+            margin-top: 30px;
+            padding: 30px;
+            background: #f0f5ff;
+            border-radius: 12px;
+        }
+
+        .contact-card h2 { margin-bottom: 15px; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 22px;
+            color: white;
+            background: #1769ff;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0c192e;
+            color: white;
+        }
+
+        @media (max-width: 750px) {
+            header { flex-direction: column; }
+            nav { justify-content: center; gap: 12px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">WebCraft.</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="quote.html">Get a Free Quote</a>
+    </nav>
+</header>
+
+<main>
+    <p class="tag">GET IN TOUCH</p>
+    <h1>Contact Our Team</h1>
+    <p>
+        Have a project in mind? Contact us to discuss
+        your website requirements.
+    </p>
+
+    <div class="contact-card">
+        <h2>Let's Start a Conversation</h2>
+        <p>Email: mohamedsaheen247@gmail.com</p>
+        <p>Phone: +91 9962192497</p>
+
+        <a href="mailto:your-email@example.com" class="btn">
+            Send an Email
+        </a>
+    </div>
+</main>
+
+<footer>© 2026 WebCraft. All rights reserved.</footer>
+
+</body>
+</html>

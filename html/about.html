@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | WebCraft</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #172033;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 7%;
+            box-shadow: 0 2px 12px #0001;
+        }
+
+        .logo {
+            color: #1769ff;
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav { display: flex; flex-wrap: wrap; gap: 20px; }
+
+        nav a {
+            text-decoration: none;
+            color: #172033;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: #1769ff; }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 80px 7%;
+            min-height: 70vh;
+        }
+
+        .tag { color: #1769ff; font-weight: bold; }
+
+        h1 { font-size: 42px; margin: 15px 0; }
+
+        h2 { margin: 30px 0 10px; }
+
+        p, li {
+            color: #667085;
+            line-height: 1.9;
+        }
+
+        ul { padding-left: 25px; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 22px;
+            background: #1769ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            background: #0c192e;
+            color: white;
+        }
+
+        @media (max-width: 750px) {
+            header { flex-direction: column; }
+            nav { justify-content: center; gap: 12px; }
+            h1 { font-size: 34px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">WebCraft.</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="quote.html">Get a Free Quote</a>
+    </nav>
+</header>
+
+<main>
+    <p class="tag">WHO WE ARE</p>
+    <h1>About Our Company</h1>
+
+    <p>
+        We are passionate about creating modern websites
+        and digital solutions that help businesses grow.
+    </p>
+
+    <h2>Our Mission</h2>
+    <p>
+        Our mission is to develop responsive, reliable and
+        user-friendly websites using modern technologies.
+    </p>
+
+    <h2>Why Choose Us?</h2>
+    <ul>
+        <li>Modern website design</li>
+        <li>Responsive layouts for all devices</li>
+        <li>Quality web development</li>
+        <li>User-friendly experiences</li>
+    </ul>
+
+    <a href="services.html" class="btn">Explore Our Services</a>
+</main>
+
+<footer>© 2026 WebCraft. All rights reserved.</footer>
+
+</body>
+</html>

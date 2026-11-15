@@ -1,38 +1,194 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Development page</title>
 
-    <link rel="stylesheet" href="../css/index.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | WebCraft</title>
 
-  <body>
-    <div id="tp">
-      <div id="we">
-        <div class="q">
-          <img id="daw" src="../images/wa.jpg" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-          <div class="logo"><a href="#">tareqix</a></div>
-          <ul>
-            <li><a href="#"> Home</a></li>
-            <li><a href="#"> About Us</a></li>
-            <li><a href="#"> Services</a></li>
-            <li><a href="#"> Contact</a></li>
-            <button><a href="#">Get a free Quote</a></button>
-          </ul>
+        body {
+            font-family: Arial, sans-serif;
+            color: #172033;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 7%;
+            box-shadow: 0 2px 12px #0001;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #1769ff;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #172033;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1769ff;
+        }
+
+        .hero {
+            min-height: 540px;
+            padding: 80px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+            background: #f0f5ff;
+        }
+
+        .content {
+            max-width: 620px;
+        }
+
+        .content h1 {
+            font-size: clamp(36px, 5vw, 55px);
+            line-height: 1.2;
+            margin: 20px 0;
+        }
+
+        .content h1 span {
+            color: #1769ff;
+        }
+
+        .content p {
+            color: #667085;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 22px;
+            background: #1769ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .visual {
+            padding: 45px 30px;
+            background: #1769ff;
+            color: white;
+            text-align: center;
+            border-radius: 18px;
+            min-width: 260px;
+        }
+
+        .visual h2 {
+            margin: 15px 0;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 65px 7%;
+        }
+
+        .intro h2 {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0c192e;
+            color: white;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">WebCraft.</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="quote.html">Get a Free Quote</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="content">
+            <p>CREATIVE DIGITAL SOLUTIONS</p>
+
+            <h1>
+                Bring Your Ideas to Life with
+                <span>Expert Web Development</span>
+            </h1>
+
+            <p>
+                Transform your vision into an impactful online presence
+                with our creative website design and development solutions.
+            </p>
+
+            <a href="contact.html" class="btn">Get in Touch →</a>
         </div>
-      </div>
 
-      <h1>Bring Your Ideas to Life With <br />Expert <span class="highlight">Web Development</span></h1>
-      <br /><br />
+        <div class="visual">
+            <h1>&lt;/&gt;</h1>
+            <h2>Build. Create. Innovate.</h2>
+            <p>Your vision, our technology.</p>
+        </div>
+    </section>
 
-      <p id="h">
-        Transform your vision into an impactful online presence with our<br />
-        creactive website design and Development solutions
-      </p>
-      <br /><br />
+    <section class="intro">
+        <h2>Innovative Web Development Solutions</h2>
+        <p>We create modern websites for your business and brand.</p>
+        <br>
+        <a href="services.html" class="btn">Explore Services</a>
+    </section>
+</main>
 
-      <p id="i">Get in Touch</p>
-    </div>
-  </body>
+<footer>
+    <p>© 2026 WebCraft. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
+
+
+
